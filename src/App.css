@@ -1,0 +1,43 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+font-family: 'Open Sans', sans-serif; 
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  background-color: #161b22;
+  color: #fff;
+}
+
+.url-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.url-container input {
+  width: 600px;
+  min-height: 30px;
+  max-width: 90vw;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+video {
+  background: #fff;
+}
