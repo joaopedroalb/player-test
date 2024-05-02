@@ -1,0 +1,93 @@
+.multiplayer-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #21212163;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  padding: 24px;
+
+  .multiplayer {
+    background: #fff;
+    border-radius: 8px;
+    min-height: 400px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__header {
+      padding: 0 8px;
+      color: #212121;
+      display: flex;
+      font-size: 20px;
+      line-height: 1.2;
+      align-items: center;
+      justify-content: space-between;
+
+      .icon {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #757575;
+        cursor: pointer;
+      }
+    }
+
+    .video-content {
+      position: relative;
+
+      .video-title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        background: #00000069;
+        width: 100%;
+        text-align: left;
+        padding: 8px 16px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        font-size: 14px;
+        line-height: 1.43;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        object-fit: fill;
+      }
+    }
+  }
+
+  .controls-video {
+    display: flex;
+    width: 100%;
+    padding: 0 24px;
+    gap: 12px;
+
+    .duration-container {
+      min-width: max-content;
+      color: #757575;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 14px;
+      line-height: 1.43;
+
+      .current-duration {
+        color: #212121;
+      }
+    }
+
+    .play-btn {
+      background: none;
+      border: none;
+      color: #9575cd;
+      line-height: 0.67;
+      font-size: 18px;
+    }
+  }
+}
